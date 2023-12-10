@@ -1,13 +1,13 @@
-import { Units } from "../enums/units";
-import { Taxes } from "../enums/taxes";
+import { Tax } from "../enums/tax";
+import { Unit } from "../enums/unit";
 
 export class Invoice {
+    constructor(){}
 
-  constructor(){}
-  name:string = "";
-  quantity:number = 0;
-  units?:Units
-  netto:number = 0;
-  taxes:Taxes = Taxes.t23;
-  brutto:number = 0;
+    name: string = '';
+    quantity: number = 0;
+    unit?: Unit;
+    netto?: number;
+    tax?: Tax;
+    brutto?: number;
 }

@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { CustomerFormComponent } from "./invoice/componets/customer-form/customer-form.component";
+import { InvoiceModule } from './invoice/invoice.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, CustomerFormComponent],
+  imports: [CommonModule, RouterOutlet, InvoiceModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'invoice-app';
-  name = "Michał Warszawski"
+  name= "Bartek"
 }
